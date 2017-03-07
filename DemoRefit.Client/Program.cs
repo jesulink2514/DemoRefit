@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Refit;
@@ -43,7 +44,7 @@ namespace DemoRefit.Client
             return moviesClient;
         }
 
-        private static void PrintMovie(Movie r)
+        private static  void PrintMovie(Movie r)
         {
             Console.WriteLine($"year: {r.Year}");
             Console.WriteLine(r.Plot);
